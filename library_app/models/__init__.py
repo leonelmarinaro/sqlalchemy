@@ -1,2 +1,2 @@
 # Puede dejarse vacío o usar importaciones absolutas
-from library_app.models.user import Author, Book
+from library_app.models.models import Cliente, Jurisdiccion, ClienteJurisdiccion, UsuariosAutorizados, UsuarioCliente, MonitoreoBots

@@ -1,18 +1,18 @@
-from logging.config import fileConfig
-
-from sqlalchemy import engine_from_config
-from sqlalchemy import pool
-
-from alembic import context
 import os
 import sys
+from logging.config import fileConfig
+
+from alembic import context
+from sqlalchemy import engine_from_config, pool
 
 # Añadir el directorio raíz al path para importaciones absolutas
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Importar base y modelos
-from library_app.db import Base
+from dotenv import load_dotenv
+
 import library_app.models
+from library_app.db import Base
 
 # this is the Alembic Config object
 config = context.config
@@ -23,9 +23,7 @@ fileConfig(config.config_file_name)
 # Configurar target_metadata para autogenerar migraciones
 target_metadata = Base.metadata
 
-# Cargar variables de entorno si es necesario
-from dotenv import load_dotenv
-
+ 
 load_dotenv()
 
 # Sobrescribir la URL de conexión con la de las variables de entorno
