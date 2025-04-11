@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: library_app
+Version: 0.1
+Requires-Dist: sqlalchemy
+Requires-Dist: alembic
+Requires-Dist: python-dotenv
+Requires-Dist: psycopg2-binary
+Dynamic: requires-dist

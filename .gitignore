@@ -1,0 +1,33 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE-related files
+.vscode/
+.idea/
+*.swp
+
+# SQLAlchemy-related files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.orig
+*.~*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
